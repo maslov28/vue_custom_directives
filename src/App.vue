@@ -7,7 +7,9 @@
         <li>директива вызывает функцию только тогда, когда было вызвано событие click, но вне текущего элемента</li>
       </ul>
     </ul>
-    <h2 v-click-outside="test">{{ title }}</h2>
+    <div v-click-outside="test" class="container">
+      <button>{{ title }}</button>
+    </div>
   </div>
 </template>
 
@@ -29,3 +31,11 @@ export default {
  
 }
 </script>
+
+<style>
+  .container {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+  }
+</style>
